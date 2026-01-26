@@ -9,10 +9,12 @@
     <style>
       body{
         width: 100%;height: 100%;
+        margin: 0;
       }
 
      .img1{
-        border-radius: 25px ;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
       }
       
       .menu{
@@ -71,23 +73,49 @@
         
       }
       .heading{
-
+      border: 1px; padding-top: 20px;
+       background-color: darkgray;
+       font-family: Arial, Helvetica, sans-serif;
       }
-      
+      .search-bar{
+        border: 1px;padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color:gray;
+      }
+      input{
+        width: 100%;
+        border-radius: 50px;
+        padding: 5px;
+      }
+      .intro{
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     </style>
 </head>
 <body>
-        <div class="heading">Profile</div>
+        <div class="heading">
+          Profile
+         <div class="search-bar">
+          <input type="text" placeholder="Search...">
+        </div>
+        </div>
         <img class="img1" src="https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg" alt="Sorry! image couldn't load" width="100%" height="300px">
+
+        <div class="intro"> 
+          <h1>hello</h1>
+        </div>
+
         <div class="menu">
+
           <img class="img2" src="https://cdn.dribbble.com/userupload/15513631/file/original-5bcae1f588c45e3ce423136072afe2a8.jpg?format=webp&resize=400x300&vertical=center" alt="Sorry! image couldn't load">
            
             <button class="home">home</button>
             <button class="contact">Contact</button>
             <button class="more">More</button>
             
-
-        </div>
+          </div>
     
     
 </body>
