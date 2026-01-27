@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Loop</title>
     <style>
+     
       body{
         width: 100%;height: 100%;
         margin: 0;
@@ -73,15 +75,19 @@
         
       }
       .heading{
-      border: 1px; padding-top: 20px;
-       background-color: darkgray;
+      border: 1px;
+       padding-top: 25px;
+       text-align: center;
        font-family: Arial, Helvetica, sans-serif;
+       background-image: linear-gradient(to right, rgb(255, 96, 96), rgb(173, 0, 179));
       }
       .search-bar{
-        border: 1px;padding: 10px;
+        border: 1px;
+        padding: 10px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        background-color:gray;
+        background-color:rgb(50, 61, 73);
+        font-family: Arial, Helvetica, sans-serif;
       }
       input{
         width: 100%;
@@ -89,24 +95,35 @@
         padding: 5px;
       }
       .intro{
-        text-align: right;
-        font-family: Arial, Helvetica, sans-serif;
+      border-left: 1px solid black;
+      padding: 100px;
+      text-align: left;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
       }
-    </style>
+       .content{
+          display: flex;
+        } 
+        .logo{
+          width: 200px;
+          height: auto;
+          border-radius: 10px;
+        }
+      </style>
 </head>
 <body>
+     
         <div class="heading">
-          Profile
+          <img class="logo" src="https://i.ibb.co/21nRvXQk/Untitled-design.png" alt="Sorry! the image couldn't load" border="0"> 
          <div class="search-bar">
           <input type="text" placeholder="Search...">
         </div>
         </div>
         <img class="img1" src="https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg" alt="Sorry! image couldn't load" width="100%" height="300px">
 
-        <div class="intro"> 
-          <h1>hello</h1>
-        </div>
-
+         <div class="content">
+         
         <div class="menu">
 
           <img class="img2" src="https://cdn.dribbble.com/userupload/15513631/file/original-5bcae1f588c45e3ce423136072afe2a8.jpg?format=webp&resize=400x300&vertical=center" alt="Sorry! image couldn't load">
@@ -114,9 +131,11 @@
             <button class="home">home</button>
             <button class="contact">Contact</button>
             <button class="more">More</button>
-            
-          </div>
-    
-    
-</body>
+            </div>
+            <div class="intro">hello </div>
+
+         
+         </div>
+         
+   
 </html>
