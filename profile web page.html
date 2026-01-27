@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
      <link rel="stylesheet" href="style.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Loop</title>
     <style>
      
       body{
-        width: 100%;height: 100%;
         margin: 0;
+        padding: 0;
       }
-
-     .img1{
+       .heading{
+      border: 1px;
+       padding-top: 25px;
+       text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
+       background-image: linear-gradient(to right, rgb(255, 96, 96), rgb(173, 0, 179));
+       }
+        .search-bar{
+        border: 1px;
+        padding-right: 10px;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color:rgb(50, 61, 73);
+        font-family: Arial, Helvetica, sans-serif;
+        }
+         input{
+        width: 100%;
+        border-radius: 50px;
+        padding: 5px;
+         }
+         .img1{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-      }
-      
-      .menu{
+         }
+          .img2{
+        border-radius: 25px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+          }
+           .img2:hover{
+        opacity: 0.5;
+        
+           }
+            .menu{
         border-right: 1px solid black;width: 400px;height: 600px;
-      }
-      .home{
+            }
+             .home{
         border: 1px;
         text-align: left;
         background-color: white;
@@ -32,12 +58,12 @@
           border-radius: 25px;
           width: 400px;
           
-      }
-        .home:hover{
+             }
+              .home:hover{
          background-color: rgb(175, 175, 175);
          color: black;
-        }
-          .contact{
+              }
+               .contact{
        border: 1px ;
        text-align: left;
         padding: 20px;
@@ -46,12 +72,12 @@
          border-radius: 25px;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 25px;
-      }
-         .contact:hover{
+               }
+                .contact:hover{
             background-color: rgb(175, 175, 175);
             color: black;
-         }
-          .more{
+                }
+                 .more{
        border: 1px ;
         padding: 20px;
          text-align: left;
@@ -60,82 +86,69 @@
          background-color: white;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 25px;
-      }
-      .more:hover{
+                 }
+                  .more:hover{
         background-color: rgb(175, 175, 175);
         color: black;
-      }
-      .img2{
-        border-radius: 25px;
-        opacity: 1;
-        transition: opacity 0.5s ease;
-      }
-      .img2:hover{
-        opacity: 0.5;
-        
-      }
-      .heading{
-      border: 1px;
-       padding-top: 25px;
-       text-align: center;
-       font-family: Arial, Helvetica, sans-serif;
-       background-image: linear-gradient(to right, rgb(255, 96, 96), rgb(173, 0, 179));
-      }
-      .search-bar{
-        border: 1px;
-        padding: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        background-color:rgb(50, 61, 73);
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      input{
-        width: 100%;
-        border-radius: 50px;
-        padding: 5px;
-      }
-      .intro{
-      border-left: 1px solid black;
-      padding: 100px;
-      text-align: left;
-      width: 100%;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
-      }
-       .content{
+                  }
+                    .intro{
+                      border: 1px;
+                      padding: 20px;
+                      background-color: rgba(223, 218, 218, 0.747);
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 20px;
+                    }
+                     .content{
           display: flex;
-        } 
-        .logo{
+                     } 
+                      .logo{
           width: 200px;
           height: auto;
           border-radius: 10px;
-        }
+                      }
+                       .name{
+          border-bottom: 1px solid black;
+          padding: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 50px;
+                       }
+                        .sub{
+          font-size: 25px;
+          color: rgb(57, 143, 255);
+                        }
+                         .about-me{
+          border-top: 1px solid black;
+          padding: 20px;
+                         }
       </style>
 </head>
 <body>
      
         <div class="heading">
-          <img class="logo" src="https://i.ibb.co/21nRvXQk/Untitled-design.png" alt="Sorry! the image couldn't load" border="0"> 
+          <img class="logo" src="https://i.ibb.co/21nRvXQk/Untitled-design.png" alt="Sorry! the image couldn't load"> 
          <div class="search-bar">
           <input type="text" placeholder="Search...">
         </div>
-        </div>
-        <img class="img1" src="https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg" alt="Sorry! image couldn't load" width="100%" height="300px">
-
-         <div class="content">
-         
-        <div class="menu">
+         </div>
+          <div class="img1">
+          <img src="https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg" alt="Sorry! image couldn't load" width="100%" height="300px">
+           </div>
+            <div class="content">
+             <div class="menu">
 
           <img class="img2" src="https://cdn.dribbble.com/userupload/15513631/file/original-5bcae1f588c45e3ce423136072afe2a8.jpg?format=webp&resize=400x300&vertical=center" alt="Sorry! image couldn't load">
            
             <button class="home">home</button>
             <button class="contact">Contact</button>
             <button class="more">More</button>
-            </div>
-            <div class="intro">hello </div>
-
-         
-         </div>
-         
-   
+              </div>
+               <div class="intro">
+                <div class="name">
+            MR.ARROW<sub class="sub">front-end webdeveloper</sub>
+                 </div>
+                  <div class="about-me">
+            Welcome to my profile page! I'm Mr. Arrow, a passionate front-end web developer dedicated to crafting beautiful and functional websites. With a keen eye for design and a love for coding, I specialize in creating user-friendly interfaces that provide seamless experiences across all devices. Explore my portfolio to see some of my latest projects, and feel free to reach out if you'd like to collaborate or learn more about my work. Let's build something amazing together! 
+                   </div>
+                    </div>
+  </body>       
 </html>
