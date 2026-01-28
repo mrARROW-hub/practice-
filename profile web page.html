@@ -33,9 +33,21 @@
         padding: 5px;
          }
          .img1{
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-         }
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img1 video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} 
+        
+
+
+
           .img2{
         border-radius: 25px;
         opacity: 1;
@@ -131,7 +143,9 @@
         </div>
          </div>
           <div class="img1">
-          <img src="https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg" alt="Sorry! image couldn't load" width="100%" height="300px">
+          <video autoplay muted loop playsinline>
+            <source src="video6.mp4" type="video/mp4">
+          </video>
            </div>
             <div class="content">
              <div class="menu">
