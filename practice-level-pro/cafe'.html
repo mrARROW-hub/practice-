@@ -6,7 +6,7 @@
     <title>Cafe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400&display=swap">
-    {Link: viewport meta tag https://www.w3schools.com/html/html_responsive.asp}
+    
     <style>
         *{
          margin: 0;
@@ -64,9 +64,9 @@
        }
        .navbar2{
         display: flex;
+        justify-content: center;
         padding: 1.5rem 5%;
         box-shadow: 0px, 2px, 10px rgb(0,0,0,0.05);
-             justify-content: center;
         align-items: center;
         background-color:#F9FBF9;
        }
@@ -74,6 +74,8 @@
         height: 80vh;
         width: 80vh;
        }
+       
+      
        .menu-grid{
         display:flex;
         justify-content: center;
@@ -83,6 +85,44 @@
         height:80vh;
         width:100%
        }
+       @media (max-width: 1024px) {
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    .hero-content h1 {
+        font-size: 2.5rem; /* Shrink text so it doesn't overflow */
+    }
+    
+    .menu-grid img{
+      height: 50vh;
+        
+    }
+}
+
+/* Mobile Styles (Screens smaller than 480px) */
+@media (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        flex-direction: column; /* Stack logo above the links */
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li a {
+        margin: 0 10px; /* Bring links closer together */
+    }
+    .menu-grid img{
+        height: 35vh;
+    }
+    
+}
     </style>
 </head>
 <body>
@@ -100,7 +140,7 @@
 
     <section id="home" class="hero"> 
      <div class="hero-content"> 
-
+        <img src="" alt="">
      </div>
     </section>
 
